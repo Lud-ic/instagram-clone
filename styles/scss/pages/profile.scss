@@ -2,24 +2,42 @@
 
 
 .container-top {
+  @include simple-flex (space-between, center, row);
+  margin-top: 40px;
+  margin-bottom: 11px;
+
 
   .privacy {
+    @include simple-flex (center, center, row);
+    margin-top: 10px;
 
     .privacy-icon {
-
+      width: 8.75px;
+      height: 11.75px;
+      margin-left: 142px;
+      margin-right: 6px;
     }
 
     .user {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-right: 5px;
+      
 
     }
 
     .arrow-icon {
+      // margin-left: 5px;
+      // margin-top: 15px;
 
     }
     
   }
 
   .container-menu-icon {
+    align-self: end;
+    margin-right: 18px;
+    cursor: pointer;
     
     .menu-icon{
 
@@ -28,42 +46,61 @@
 }
 
 .info {
-  .img_profile {
+  .container-datas {
+    @include simple-flex (flex-start,center,row);
 
-  }
-
-  .numbers-info {
-
-    .posts-info {
-
-      .posts-numb {
-
+    .img_profile {
+      @include box-round (86px);
+      margin-left: 11px;
+      margin-bottom: 17px;
+      margin-right: 40px;
+      cursor: pointer;
+    }
+  
+    .numbers-info {
+      @include simple-flex (space-around, center, row);
+      width: 100%;
+      box-sizing: border-box;
+        
+      .posts-info {
+        @include simple-flex (center,center,column);
+        cursor: pointer;
+  
+        .posts-numb {
+  
+        }
+        .title-info {
+  
+        }
       }
-      .title-info {
-
+      .followers-info {
+        @include simple-flex (center,center,column);
+        cursor: pointer;
+  
+        .posts-numb {
+  
+        }
+        .title-info {
+  
+        }
+      }
+      .following-info {
+        @include simple-flex (center,center,column);
+        cursor: pointer;
+  
+        .posts-numb {
+  
+        }
+        .title-info {
+  
+        }
       }
     }
-    .followers-info {
-
-      .posts-numb {
-
-      }
-      .title-info {
-
-      }
-    }
-    .following-info {
-
-      .posts-numb {
-
-      }
-      .title-info {
-
-      }
-    }
+    
   }
 
   .name-bio {
+    margin-left: 16px;
     .name-profile {
 
     }
@@ -73,17 +110,35 @@
   }
 
   .container-ed-profile {
+    @include simple-flex (center, center);
+    margin: 16px 0px;
+    cursor: pointer;
+    
+    
 
     .ed-profile {
-
+    @include simple-flex (center, center);  
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 343px;
+    height: 29px;
     }
 
   }
 
   .container-stories {
-    .add-stories {
-      .img-add-stories {
+    @include simple-flex ();
+    margin-bottom: 16px;
 
+    .add-stories {
+      margin-right: 22px;
+      cursor: pointer;
+
+      .img-add-stories {
+        @include box-round (75px);
+        
       }
 
       .title-stories {
@@ -93,8 +148,13 @@
     }
 
     .stories-friends {
+      @include simple-flex (center,center, column);
+      margin-right: 26px;
+      cursor: pointer;
 
       .img-friends {
+        @include box-round (56px);
+        margin-bottom: 7px;
 
       }
 
@@ -105,8 +165,13 @@
     }
 
     .stories-sport {
+      @include simple-flex (center,center, column);
+      margin-right: 26px;
+      cursor: pointer;
 
       .img-sport{
+        @include box-round (56px);
+        margin-bottom: 7px;
 
       }
 
@@ -116,8 +181,14 @@
     }
 
     .stories-design {
+      @include simple-flex (center,center, column);
+      margin-right: 26px;
+      cursor: pointer;
+
 
       .img-design {
+        @include box-round (56px);
+        margin-bottom: 7px;
 
       }
 
@@ -130,21 +201,52 @@
 }
 
 .nav-pic {
+  @include simple-flex (space-around, center, row);
+  margin-bottom: 11.5px;
   
   .nav-grid {
+    cursor: pointer;
+    padding: 0 83px;
+    box-sizing: border-box;
 
   }
 
+  
   .nav-tagpic {
-
+    cursor: pointer;
+    padding: 0 83px;
+    box-sizing: border-box;
+    
+  }
+  
+}
+.container-line {
+  @include simple-flex (flex-start, center, row);
+  .line-dark {
+    width:50%;
+    height: 1px;
+    text-align:left;
+    margin-bottom: 1px;
   }
 
+  // .line-light {
+  //   width:50%;
+  //   text-align:left;
+  //   margin-left:0px;
+  //   color:;
+  // }
 }
 
 .pictures {
 
   .rows {
-
+    @include simple-flex(space-around);
+    // margin-bottom: 1px;
+    
+    .pic-posts {
+      width: 124px;
+      height: 124px;
+    }
   }
 
 }

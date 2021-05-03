@@ -31,4 +31,207 @@ html {
   box-sizing: border-box;
 }
 
+.container-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 11px;
+}
+.container-top .privacy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.container-top .privacy .privacy-icon {
+  width: 8.75px;
+  height: 11.75px;
+  margin-left: 142px;
+  margin-right: 6px;
+}
+.container-top .privacy .user {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.container-top .container-menu-icon {
+  align-self: end;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.info .container-datas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.info .container-datas .img_profile {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-left: 11px;
+  margin-bottom: 17px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.info .container-datas .numbers-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+}
+.info .container-datas .numbers-info .posts-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.info .container-datas .numbers-info .followers-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.info .container-datas .numbers-info .following-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.info .name-bio {
+  margin-left: 16px;
+}
+.info .container-ed-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 16px 0px;
+  cursor: pointer;
+}
+.info .container-ed-profile .ed-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 343px;
+  height: 29px;
+}
+.info .container-stories {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+.info .container-stories .add-stories {
+  margin-right: 22px;
+  cursor: pointer;
+}
+.info .container-stories .add-stories .img-add-stories {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-size: cover;
+}
+.info .container-stories .stories-friends {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 26px;
+  cursor: pointer;
+}
+.info .container-stories .stories-friends .img-friends {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-bottom: 7px;
+}
+.info .container-stories .stories-sport {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 26px;
+  cursor: pointer;
+}
+.info .container-stories .stories-sport .img-sport {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-bottom: 7px;
+}
+.info .container-stories .stories-design {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 26px;
+  cursor: pointer;
+}
+.info .container-stories .stories-design .img-design {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-bottom: 7px;
+}
+.nav-pic {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 11.5px;
+}
+.nav-pic .nav-grid {
+  cursor: pointer;
+  padding: 0 83px;
+  box-sizing: border-box;
+}
+.nav-pic .nav-tagpic {
+  cursor: pointer;
+  padding: 0 83px;
+  box-sizing: border-box;
+}
+
+.container-line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.container-line .line-dark {
+  width: 50%;
+  height: 1px;
+  text-align: left;
+  margin-bottom: 1px;
+}
+
+.pictures .rows {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.pictures .rows .pic-posts {
+  width: 124px;
+  height: 124px;
+}
+
 /*# sourceMappingURL=profile.css.map */
