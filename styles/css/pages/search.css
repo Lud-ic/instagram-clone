@@ -70,6 +70,7 @@ html {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  margin-bottom: 7px;
 }
 .tabs .tab-IGTV {
   border: 1px solid #ccc;
@@ -160,6 +161,19 @@ html {
 }
 .tabs .tab-music .tab {
   border: none;
+}
+
+.images {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1px;
+}
+.images img {
+  width: 124px;
+  height: 119.53px;
 }
 
 /*# sourceMappingURL=search.css.map */

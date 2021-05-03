@@ -45,6 +45,7 @@
 
 .tabs {
   @include simple-flex(space-between, center, row);
+  margin-bottom: 7px;
   // overflow-x: auto;
 
   // &::-webkit-scrollbar {
@@ -162,3 +163,13 @@
   } 
 }
 
+.images {
+  @include simple-flex();
+  flex-wrap: wrap;
+  margin: 1px;
+  img {
+    width: 124px;
+    height: 119.53px;
+    
+  }
+}
