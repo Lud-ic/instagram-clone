@@ -1,2 +1,200 @@
 @import "..//styles.scss";
 
+.head-bar {
+  @include simple-flex(space-around, center, row);
+
+  .following-bar{
+    align-self: center;
+    font-size: 1.6rem;
+    margin-top: 11px;
+  }
+
+  .you-bar{
+    font-size: 1.6rem;
+    margin-top: 11px;
+  }
+}
+
+.f-request-bar {
+  @include simple-flex ();
+
+  .request {
+    font-size: 1.5rem;
+  }
+}
+
+.container-general {
+.container-new {
+  
+  .container-new-title {
+    
+  }
+  
+  .container-new-info {
+    @include simple-flex (flex-start, center, row);
+    width: 375px;
+    
+    .img-profiles {
+
+    }
+
+    .reaction-type {
+
+      .time {
+
+      }
+    }
+
+    .container-new-pic {
+      display: flex;
+      align-self: flex-end;
+      
+
+      
+    }
+
+  }
+}
+
+.container-today {
+  
+  .container-today-title {
+    
+  }
+  
+  .container-today-info {
+    @include simple-flex (flex-start, center, row);
+    
+    .img-profiles-dub {
+
+    }
+    .img-profiles-dubtwo {
+
+    }
+    .reaction-type {
+
+      .time {
+
+      }
+    }
+
+    .container-today-pic {
+
+      
+    }
+
+  }
+}
+
+.container-week {
+  
+  .container-week-title {
+    
+  }
+  
+  .container-week-info {
+    @include simple-flex (flex-start, center, row);
+
+    .conteiner-week-one{
+
+      .img-profiles {
+  
+      }
+  
+      .reaction-type {
+  
+        .time {
+  
+        }
+      }
+  
+      .container-week-pic {
+             
+      }
+      .like-icon{
+  
+      }
+      .week-reply {
+  
+      }
+    }
+    
+    .conteiner-week-two{
+
+      .img-profiles {
+
+      }
+
+      .reaction-type {
+
+        .time {
+
+        }
+
+      }
+
+      .box-message {
+
+      }
+    }
+    .conteiner-week-three{
+
+      .img-profiles {
+
+      }
+
+      .reaction-type {
+
+        .time {
+
+        }
+
+      }
+      
+      .box-message {
+
+      }
+    }
+    .conteiner-week-four{
+
+      .img-profiles {
+
+      }
+
+      .reaction-type {
+
+        .time {
+
+        }
+
+      }
+      
+      .box-follow {
+
+      }
+    }
+  }
+}
+
+.container-month {
+
+  .container-month-title {
+
+  }
+
+  .img-profiles {
+
+  }
+
+  .reaction-type {
+    .time {
+
+    }
+  }
+
+  .box-message {
+
+  }
+
+}
+}

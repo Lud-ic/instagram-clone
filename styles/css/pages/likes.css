@@ -31,4 +31,54 @@ html {
   box-sizing: border-box;
 }
 
+.head-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.head-bar .following-bar {
+  align-self: center;
+  font-size: 1.6rem;
+  margin-top: 11px;
+}
+.head-bar .you-bar {
+  font-size: 1.6rem;
+  margin-top: 11px;
+}
+
+.f-request-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.f-request-bar .request {
+  font-size: 1.5rem;
+}
+
+.container-general .container-new .container-new-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 375px;
+}
+.container-general .container-new .container-new-info .container-new-pic {
+  display: flex;
+  align-self: flex-end;
+}
+.container-general .container-today .container-today-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.container-general .container-week .container-week-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
 /*# sourceMappingURL=likes.css.map */
