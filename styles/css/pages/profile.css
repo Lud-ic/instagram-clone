@@ -218,6 +218,7 @@ html {
 }
 .container-line .line-dark {
   width: 50%;
+  border: 1px solid #262626;
   height: 1px;
   text-align: left;
   margin-bottom: 1px;
