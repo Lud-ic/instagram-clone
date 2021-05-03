@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: Arial;
+}
+
+html {
+  font-size: 10px;
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 50px;
+  background-color: #f2f2f2;
+  position: sticky;
+  bottom: 0;
+  padding: 0 26px;
+  box-sizing: border-box;
+}
+
+.container-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.container-search .search-bar {
+  display: inline-flex;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #767680;
+  width: 327px;
+  height: 36px;
+}
+.container-search .search-bar .search-bar-icon {
+  width: 13px;
+  margin: 11.25px 9.07px 11.07px 11.25px;
+}
+.container-search .search-bar .search-box {
+  border: none;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  flex: 1;
+  opacity: 60%;
+  font-size: 1.6rem;
+}
+.container-search .shape-search {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  color: #979797;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.tabs .tab-IGTV {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 75px;
+  height: 32px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.tabs .tab-IGTV .tab-iconIGTV {
+  width: 12.5px;
+  height: 14.78px;
+}
+.tabs .tab-IGTV .tab {
+  border: none;
+  margin-left: 6px;
+}
+.tabs .tab-shop {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 75px;
+  height: 32px;
+  margin-right: 6px;
+}
+.tabs .tab-shop .tab-iconShop {
+  width: 12.5px;
+  height: 14.5px;
+}
+.tabs .tab-shop .tab {
+  border: none;
+  margin-left: 6.5px;
+}
+.tabs .tab-style {
+  display: inline-flex;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 75px;
+  height: 32px;
+  margin-right: 6px;
+}
+.tabs .tab-style .tab {
+  border: none;
+}
+.tabs .tab-sports {
+  display: inline-flex;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 75px;
+  height: 32px;
+  margin-right: 6px;
+}
+.tabs .tab-sports .tab {
+  border: none;
+}
+.tabs .tab-auto {
+  display: inline-flex;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 75px;
+  height: 32px;
+  margin-right: 6px;
+}
+.tabs .tab-auto .tab {
+  border: none;
+}
+.tabs .tab-music {
+  display: inline-flex;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 75px;
+  height: 32px;
+  margin-right: 6px;
+}
+.tabs .tab-music .tab {
+  border: none;
+}
+
+/*# sourceMappingURL=search.css.map */

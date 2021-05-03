@@ -1,0 +1,164 @@
+@import "..//styles.scss";
+
+.container-search {
+  @include simple-flex(space-between, center, row);
+  margin-bottom: 10px;
+
+  .search-bar {
+    display: inline-flex;
+    // flex: 1 1 300px;
+    position: relative;
+    // border:  solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #767680;
+    // opacity: 12%;
+    width: 327px;
+    height: 36px;
+    
+    
+    
+    .search-bar-icon {
+      width: 13px;
+      margin: 11.25px 9.07px 11.07px 11.25px;
+      // color: #3c3c43;
+      // opacity: 60%;
+    }
+    
+    .search-box {
+      border: none;
+      padding: 0.5rem 0.5rem 0.5rem 0;
+      flex: 1;
+      // color: #3c3c43;
+      opacity: 60%;
+      font-size: 1.6rem ;
+    }
+  }
+  
+  .shape-search {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    color: #979797
+  }
+}
+
+.tabs {
+  @include simple-flex(space-between, center, row);
+  // overflow-x: auto;
+
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
+
+
+  .tab-IGTV{
+    // @include simple-flex(center, center, row);
+    // display: inline-flex;
+    // position: relative;
+    
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 75px;
+    height: 32px;
+    margin-right: 6px;
+    cursor: pointer;
+
+    .tab-iconIGTV {
+      width: 12.5px;
+      height: 14.78px;
+    }
+    .tab {
+      border: none;
+      // padding: 0.5rem 0.5rem 0.5rem 0;
+      // flex: 1;
+      margin-left: 6px;
+      
+    }
+  }
+  .tab-shop {
+    // display: inline-flex;
+    // position: relative;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 75px;
+    height: 32px;
+    margin-right: 6px;
+
+    .tab-iconShop {
+      width: 12.5px;
+      height: 14.5px;
+
+    }
+    .tab {
+      border: none;
+      margin-left: 6.5px;
+
+    }
+  }
+  .tab-style {
+    display: inline-flex;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 75px;
+    height: 32px;
+    margin-right: 6px;
+
+    .tab {
+      border: none;
+    }
+  }
+  .tab-sports {
+    display: inline-flex;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 75px;
+    height: 32px;
+    margin-right: 6px;
+
+    .tab {
+      border: none;
+    }
+  }
+  .tab-auto {
+    display: inline-flex;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 75px;
+    height: 32px;
+    margin-right: 6px;
+
+    .tab {
+      border: none;
+    }
+  }
+  .tab-music {
+    display: inline-flex;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 75px;
+    height: 32px;
+    margin-right: 6px;
+
+    .tab {
+      border: none;
+      
+    }
+  } 
+}
+
