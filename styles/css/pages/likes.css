@@ -42,11 +42,17 @@ html {
 .head-bar .following-bar {
   align-self: center;
   font-size: 1.6rem;
+  font-weight: 600;
   margin-top: 11px;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 .head-bar .you-bar {
   font-size: 1.6rem;
   margin-top: 11px;
+  font-weight: 600;
+  color: #262626;
+  cursor: pointer;
 }
 
 .container-line {
@@ -71,6 +77,7 @@ html {
 }
 .f-request-bar .request {
   font-size: 1.5rem;
+  color: #262626;
   margin: 14px 0px 14px 16px;
 }
 
@@ -82,68 +89,116 @@ html {
   margin-right: 16px;
   margin-left: 16px;
 }
-.container-general .container-new {
-  height: 106px;
-}
 .container-general .container-new .container-new-title {
-  margin-bottom: 21px;
+  font-size: 2rem;
+  color: #262626;
+  font-weight: 600;
 }
 .container-general .container-new .container-new-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  width: 375px;
-  gap: 12px;
   box-sizing: border-box;
+  margin-top: 21px;
 }
 .container-general .container-new .container-new-info .img-profiles {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-size: cover;
+  cursor: pointer;
+}
+.container-general .container-new .container-new-info .reaction-type {
+  font-size: 1.3rem;
+  color: #262626;
+  margin-left: 12px;
+  width: 230px;
+  height: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.container-general .container-new .container-new-info .reaction-type .time {
+  color: rgba(0, 0, 0, 0.4);
 }
 .container-general .container-new .container-new-info .container-new-pic {
-  display: flex;
-  align-self: flex-end;
-  margin-right: 16px;
+  box-sizing: border-box;
+  margin-right: 0;
+  margin-left: 13px;
+  width: 44px;
+  height: 44px;
 }
 .container-general .container-today {
-  height: 106px;
   box-sizing: border-box;
+  margin-top: 21px;
+}
+.container-general .container-today .container-today-title {
+  font-size: 2rem;
+  color: #262626;
+  font-weight: 600;
+  box-sizing: border-box;
+  margin-bottom: 21px;
 }
 .container-general .container-today .container-today-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  width: 375px;
   box-sizing: border-box;
+  margin-top: 21px;
 }
-.container-general .container-today .container-today-info .img-profiles-dub {
+.container-general .container-today .container-today-info .container-today-img {
+  margin-top: -41px;
+}
+.container-general .container-today .container-today-info .container-today-img .img-profiles-dub {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-size: cover;
-  margin: 8px auto 20px auto;
+  margin: auto auto 20px auto;
   box-sizing: border-box;
   position: absolute;
+  cursor: pointer;
 }
-.container-general .container-today .container-today-info .img-profiles-dubtwo {
+.container-general .container-today .container-today-info .container-today-img .img-profiles-dubtwo {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-size: cover;
-  margin: 20px auto 8px 12px;
+  margin: 12px 12px 12px 12px;
   box-sizing: border-box;
   position: absolute;
+  cursor: pointer;
+}
+.container-general .container-today .container-today-info .reaction-type {
+  font-size: 1.3rem;
+  color: #262626;
+  margin-left: 56px;
+  width: 230px;
+  height: 32px;
+}
+.container-general .container-today .container-today-info .reaction-type .time {
+  color: rgba(0, 0, 0, 0.4);
+}
+.container-general .container-today .container-today-info .container-today-pic {
+  width: 44px;
+  height: 44px;
+  margin-left: 13px;
 }
 .container-general .container-week {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  height: 317px;
+  margin-top: 21px;
+}
+.container-general .container-week .container-week-title {
+  font-size: 2rem;
+  color: #262626;
+  font-weight: 600;
+  margin-bottom: 21px;
 }
 .container-general .container-week .container-week-info {
   display: flex;
@@ -156,65 +211,239 @@ html {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  height: 91px;
+  margin-bottom: 23px;
 }
 .container-general .container-week .container-week-info .conteiner-week-one .img-profiles {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-size: cover;
+  cursor: pointer;
+  margin-top: -30px;
+}
+.container-general .container-week .container-week-info .conteiner-week-one .reaction {
+  margin-left: 12px;
+  box-sizing: border-box;
+}
+.container-general .container-week .container-week-info .conteiner-week-one .reaction .reaction-type-general {
+  font-size: 1.3rem;
+  color: #262626;
+  width: 230px;
+  height: 48px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container-general .container-week .container-week-info .conteiner-week-one .reaction .reaction-type-general .tag-name {
+  color: #3797ef;
+}
+.container-general .container-week .container-week-info .conteiner-week-one .reaction .reaction-type-general .time {
+  color: rgba(0, 0, 0, 0.4);
+}
+.container-general .container-week .container-week-info .conteiner-week-one .reaction .reaction-like-reply {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+.container-general .container-week .container-week-info .conteiner-week-one .reaction .reaction-like-reply .like-icon {
+  width: 12px;
+  height: 10px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-right: 14px;
+  cursor: pointer;
+}
+.container-general .container-week .container-week-info .conteiner-week-one .reaction .reaction-like-reply .week-reply {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.container-general .container-week .container-week-info .conteiner-week-one .container-week-pic {
+  width: 44px;
+  height: 44px;
+  margin-left: 13px;
+  margin-top: -30px;
 }
 .container-general .container-week .container-week-info .conteiner-week-two {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  height: 60px;
+  margin-bottom: 16px;
 }
 .container-general .container-week .container-week-info .conteiner-week-two .img-profiles {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-size: cover;
+  cursor: pointer;
+}
+.container-general .container-week .container-week-info .conteiner-week-two .reaction-type {
+  margin-left: 12px;
+  width: 184px;
+  height: 32px;
+  font-size: 1.3rem;
+  color: #262626;
+}
+.container-general .container-week .container-week-info .conteiner-week-two .reaction-type .time {
+  color: rgba(0, 0, 0, 0.4);
+}
+.container-general .container-week .container-week-info .conteiner-week-two .box-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  border: 1px solid rgba(60, 60, 67, 0.18);
+  border-radius: 6px;
+  overflow: hidden;
+  width: 90px;
+  height: 28px;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #262626;
+  margin-left: 13px;
 }
 .container-general .container-week .container-week-info .conteiner-week-three {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  height: 60px;
+  margin-bottom: 16px;
 }
 .container-general .container-week .container-week-info .conteiner-week-three .img-profiles {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-size: cover;
+  cursor: pointer;
+}
+.container-general .container-week .container-week-info .conteiner-week-three .reaction-type {
+  font-size: 1.3rem;
+  color: #262626;
+  margin-left: 12px;
+  width: 184px;
+  height: 32px;
+}
+.container-general .container-week .container-week-info .conteiner-week-three .reaction-type .time {
+  color: rgba(0, 0, 0, 0.4);
+}
+.container-general .container-week .container-week-info .conteiner-week-three .box-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  border: 1px solid rgba(60, 60, 67, 0.18);
+  border-radius: 6px;
+  overflow: hidden;
+  width: 90px;
+  height: 28px;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-left: 13px;
+  color: #262626;
 }
 .container-general .container-week .container-week-info .conteiner-week-four {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  height: 60px;
+  margin-bottom: 16px;
 }
 .container-general .container-week .container-week-info .conteiner-week-four .img-profiles {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-size: cover;
+  cursor: pointer;
+}
+.container-general .container-week .container-week-info .conteiner-week-four .reaction-type {
+  font-size: 1.3rem;
+  color: #262626;
+  margin-left: 12px;
+  width: 184px;
+  height: 32px;
+}
+.container-general .container-week .container-week-info .conteiner-week-four .reaction-type .time {
+  color: rgba(0, 0, 0, 0.4);
+}
+.container-general .container-week .container-week-info .conteiner-week-four .box-follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  background-color: #3797ef;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 90px;
+  height: 28px;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-left: 13px;
+  color: #fff;
 }
 .container-general .container-month {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  height: 60px;
+  margin-bottom: 16px;
+  margin-top: 21px;
 }
-.container-general .container-month .img-profiles {
+.container-general .container-month .container-month-title {
+  font-size: 2rem;
+  color: #262626;
+  font-weight: 600;
+}
+.container-general .container-month .container-month-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 21px;
+}
+.container-general .container-month .container-month-info .img-profiles {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-size: cover;
+  cursor: pointer;
+}
+.container-general .container-month .container-month-info .reaction-type {
+  font-size: 1.3rem;
+  color: #262626;
+  margin-left: 12px;
+  width: 184px;
+  height: 32px;
+}
+.container-general .container-month .container-month-info .reaction-type .time {
+  color: rgba(0, 0, 0, 0.4);
+}
+.container-general .container-month .container-month-info .box-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  border: 1px solid rgba(60, 60, 67, 0.18);
+  border-radius: 6px;
+  overflow: hidden;
+  width: 90px;
+  height: 28px;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-left: 13px;
+  color: #262626;
 }
 
 /*# sourceMappingURL=likes.css.map */

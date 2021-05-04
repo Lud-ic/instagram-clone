@@ -8,12 +8,18 @@
   .following-bar {
     align-self: center;
     font-size: 1.6rem;
+    font-weight: 600;
     margin-top: 11px;
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
   }
 
   .you-bar {
     font-size: 1.6rem;
     margin-top: 11px;
+    font-weight: 600;
+    color: $text-color;
+    cursor: pointer;
   }
 }
 
@@ -35,6 +41,7 @@
 
   .request {
     font-size: 1.5rem;
+    color: $text-color;
     margin: 14px 0px 14px 16px;
   }
 }
@@ -43,78 +50,129 @@
   @include simple-flex(flex-start, flex-start, column);
   margin-right: 16px;
   margin-left: 16px;
+
   .container-new {
-    height: 106px;
+    // height: 106px;
 
     .container-new-title {
-      margin-bottom: 21px; 
+      font-size: 2rem;
+      color: $text-color;
+      font-weight: 600;
+      // padding-bottom: 21px;
+      // margin-top: 13px;
+      // box-sizing: border-box;
     }
 
     .container-new-info {
       @include simple-flex(flex-start, center, row);
-      width: 375px;
-      gap: 12px;
+      // width: 375px;
+      // gap: 12px;
       box-sizing: border-box;
+      margin-top: 21px;
 
       .img-profiles {
-        @include box-round (44px);
-        
+        @include box-round(44px);
+        // margin-right: ;
+        cursor: pointer;
       }
 
       .reaction-type {
+        font-size: 1.3rem;
+        color: $text-color;
+        margin-left: 12px;
+        width: 230px;
+        height: 32px;
+        @include simple-flex(flex-start, center, row);
+
         .time {
+          color: rgba(0, 0, 0, 0.4);
         }
       }
 
       .container-new-pic {
-        display: flex;
-        align-self: flex-end;
-        margin-right: 16px;
+        // display: flex;
+        // align-self: flex-end;
+        box-sizing: border-box;
+        margin-right: 0;
+        margin-left:13px;
+        width: 44px;
+        height: 44px;
         
       }
     }
   }
 
   .container-today {
-    height: 106px ;
+    // height: 106px ;
     box-sizing: border-box;
+    margin-top: 21px;
+
     .container-today-title {
+      font-size: 2rem;
+      color: $text-color;
+      font-weight: 600;
+      box-sizing: border-box;
+      margin-bottom: 21px;
     }
 
     .container-today-info {
       @include simple-flex(flex-start, center, row);
-      width: 375px;
+      // width: 375px;
       // gap: 12px;
       box-sizing: border-box;
+      margin-top: 21px;
 
-      .img-profiles-dub {
-        @include box-round (32px);
-        margin: 8px auto 20px auto;
-        box-sizing: border-box;
-        position: absolute;
-      }
-      .img-profiles-dubtwo {
-        @include box-round (32px);
-        margin: 20px auto 8px 12px;
-        box-sizing: border-box;
-        position: absolute;
+      .container-today-img {
+        margin-top: -41px;
         
+        .img-profiles-dub {
+          @include box-round(32px);
+          margin: auto auto 20px auto;
+          box-sizing: border-box;
+          position: absolute;
+          cursor: pointer;
+        }
+        .img-profiles-dubtwo {
+          @include box-round(32px);
+          margin: 12px 12px 12px 12px;
+          box-sizing: border-box;
+          position: absolute;
+          cursor: pointer;
+        }
       }
+
       .reaction-type {
+        
+        font-size: 1.3rem;
+        color: $text-color;
+        margin-left: 56px;
+        width: 230px;
+        height: 32px;
+        // box-sizing: border-box;
+
         .time {
+          color: rgba(0, 0, 0, 0.4);
         }
       }
 
       .container-today-pic {
+        width: 44px;
+        height: 44px;
+        margin-left: 13px;
       }
     }
   }
 
   .container-week {
     @include simple-flex(flex-start, flex-start, column);
-    height: 317px;
+    // height: 317px;
+    margin-top: 21px;
 
     .container-week-title {
+      font-size: 2rem;
+      color: $text-color;
+      font-weight: 600;
+      margin-bottom: 21px;
     }
 
     .container-week-info {
@@ -122,73 +180,185 @@
 
       .conteiner-week-one {
         @include simple-flex(flex-start, center, row);
-        height: 91px;
+        // height: 91px;
+        margin-bottom: 23px;
+        
+
         .img-profiles {
-          @include box-round (44px);
+          @include box-round(44px);
+          cursor: pointer;
+          margin-top: -30px;
         }
 
-        .reaction-type {
-          .time {
+        .reaction {
+          margin-left: 12px;
+          box-sizing: border-box;
+
+          .reaction-type-general {
+            font-size: 1.3rem;
+            color: $text-color;
+            // margin-left: 12px;
+            width: 230px;
+            height: 48px;
+            box-sizing: border-box;
+
+            @include simple-flex(flex-start, flex-start, column);
+            
+            // .reaction-type {
+              
+              .tag-name {
+                color: $highlight-color;
+              }
+
+              .time {
+                color: rgba(0, 0, 0, 0.4);
+              }
+            // }
           }
-        }
 
+          .reaction-like-reply {
+            @include simple-flex(flex-start, center, row);
+            margin-top: 15px;
+            box-sizing: border-box;
+            // margin-left: 12px;
+
+            .like-icon {
+              width: 12px;
+              height: 10px;
+              color: rgba(0, 0, 0, 0.4);
+              margin-right: 14px;
+              cursor: pointer;
+            }
+
+            .week-reply {
+              font-size: 1.1rem;
+              color: rgba(0, 0, 0, 0.4);
+              cursor: pointer;
+            }
+          }
+
+        }
         .container-week-pic {
-        }
-        .like-icon {
-        }
-        .week-reply {
+          width: 44px;
+          height: 44px;
+          // box-sizing: border-box;
+          margin-left: 13px;
+          margin-top: -30px;
+          
         }
       }
 
       .conteiner-week-two {
         @include simple-flex(flex-start, center, row);
-        height: 60px;
+        // height: 60px;
+        margin-bottom: 16px;
 
         .img-profiles {
-          @include box-round (44px);
+          @include box-round(44px);
+          cursor: pointer;
         }
-        
 
         .reaction-type {
+          margin-left: 12px;
+          width: 184px;
+          height: 32px;
+          font-size: 1.3rem;
+          color: $text-color;
+
           .time {
+            color: rgba(0, 0, 0, 0.4);
           }
         }
 
         .box-message {
+          @include simple-flex(center, center, row);
+          cursor: pointer;
+          border: 1px solid rgba(60, 60, 67, 0.18);
+          border-radius: 6px;
+          overflow: hidden;
+          width: 90px;
+          height: 28px;
+          position: relative;
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: $text-color;
+          margin-left: 13px;
+          // margin-right: auto;
         }
       }
       .conteiner-week-three {
         @include simple-flex(flex-start, center, row);
-        height: 60px;
-
+        // height: 60px;
+        margin-bottom: 16px;
 
         .img-profiles {
-          @include box-round (44px);
+          @include box-round(44px);
+          cursor: pointer;
         }
 
         .reaction-type {
+          font-size: 1.3rem;
+          color: $text-color;
+          margin-left: 12px;
+          width: 184px;
+          height: 32px;
+
           .time {
+            color: rgba(0, 0, 0, 0.4);
           }
         }
 
         .box-message {
+          @include simple-flex(center, center, row);
+          cursor: pointer;
+          border: 1px solid rgba(60, 60, 67, 0.18);
+          border-radius: 6px;
+          overflow: hidden;
+          width: 90px;
+          height: 28px;
+          position: relative;
+          font-size: 1.4rem;
+          font-weight: 600;
+          margin-left: 13px;
+          color: $text-color;
         }
       }
       .conteiner-week-four {
         @include simple-flex(flex-start, center, row);
-        height: 60px;
-
+        // height: 60px;
+        margin-bottom: 16px;
 
         .img-profiles {
-          @include box-round (44px);
+          @include box-round(44px);
+          cursor: pointer;
         }
 
         .reaction-type {
+          font-size: 1.3rem;
+          color: $text-color;
+          margin-left: 12px;
+          width: 184px;
+          height: 32px;
+
           .time {
+            color: rgba(0, 0, 0, 0.4);
           }
         }
 
         .box-follow {
+          @include simple-flex(center, center, row);
+          cursor: pointer;
+          // border: 1px solid rgba(60, 60, 67, 0.18);
+          background-color: #3797ef;
+          border-radius: 6px;
+          overflow: hidden;
+          width: 90px;
+          height: 28px;
+          position: relative;
+          font-size: 1.4rem;
+          font-weight: 600;
+          margin-left: 13px;
+          color: $highlight-contrast-color;
         }
       }
     }
@@ -196,22 +366,53 @@
 
   .container-month {
     @include simple-flex(flex-start, flex-start, column);
-    height: 60px;
+    // height: 60px;
+    margin-bottom: 16px;
+    margin-top: 21px;
 
     .container-month-title {
+      // @include simple-flex(center, center, row);
+      font-size: 2rem;
+      color: $text-color;
+      font-weight: 600;
       // @include simple-flex(flex-start, center, row);
     }
 
-    .img-profiles {
-      @include box-round (44px);
-    }
+    .container-month-info {
+      @include simple-flex(center, center, row);
+      margin-top: 21px;
 
-    .reaction-type {
-      .time {
+      .img-profiles {
+        @include box-round(44px);
+        cursor: pointer;
       }
-    }
 
-    .box-message {
+      .reaction-type {
+        font-size: 1.3rem;
+        color: $text-color;
+        margin-left: 12px;
+        width: 184px;
+        height: 32px;
+
+        .time {
+          color: rgba(0, 0, 0, 0.4);
+        }
+      }
+
+      .box-message {
+        @include simple-flex(center, center, row);
+        cursor: pointer;
+        border: 1px solid rgba(60, 60, 67, 0.18);
+        border-radius: 6px;
+        overflow: hidden;
+        width: 90px;
+        height: 28px;
+        position: relative;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-left: 13px;
+        color: $text-color;
+      }
     }
   }
 }
