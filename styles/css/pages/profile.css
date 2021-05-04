@@ -57,34 +57,6 @@ html {
   font-weight: 600;
   margin-right: 5px;
 }
-.container-top .container-menu-icon {
-  align-self: end;
-  margin-right: 18px;
-  cursor: pointer;
-}
-.container-top .container-menu-icon #menu-icon {
-  cursor: pointer;
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  font-size: 30px;
-}
-.container-top .container-menu-icon .side-menu {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  transition: all ease-in-out 0.3s;
-  margin-left: 100%;
-  height: 100%;
-  width: 251px;
-  background-color: aqua;
-  left: 251px;
-}
-.container-top .container-menu-icon #menu-toggle:checked ~ #side-menu {
-  transform: translateX(100px);
-}
-
 .info .container-datas {
   display: flex;
   justify-content: flex-start;
