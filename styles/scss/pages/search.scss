@@ -2,11 +2,14 @@
 
 .container-search {
   @include simple-flex(space-between, center, row);
-  margin-bottom: 10px;
+  margin-bottom: 9px;
+  margin-top: 48px;
+  
 
   .search-bar {
     display: inline-flex;
-    // flex: 1 1 300px;
+    margin-left: 8px;
+    box-sizing: border-box;
     position: relative;
     // border:  solid #ccc;
     border-radius: 10px;
@@ -44,17 +47,20 @@
 }
 
 .tabs {
-  @include simple-flex(space-between, center, row);
+  display: flex;
   margin-bottom: 7px;
-  // overflow-x: auto;
+  margin-left: 8px;
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: auto;
 
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
 
   .tab-IGTV{
-    // @include simple-flex(center, center, row);
+    @include simple-flex(center, center, row);
     // display: inline-flex;
     // position: relative;
     
@@ -65,6 +71,7 @@
     height: 32px;
     margin-right: 6px;
     cursor: pointer;
+    position: relative;
 
     .tab-iconIGTV {
       width: 12.5px;
@@ -79,15 +86,17 @@
     }
   }
   .tab-shop {
+    @include simple-flex(center, center, row);
     // display: inline-flex;
     // position: relative;
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 6px;
     overflow: hidden;
-    width: 75px;
+    width: 77px;
     height: 32px;
     margin-right: 6px;
+    position: relative;
 
     .tab-iconShop {
       width: 12.5px;
@@ -101,60 +110,66 @@
     }
   }
   .tab-style {
-    display: inline-flex;
-    position: relative;
+    @include simple-flex(center, center, row);
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 6px;
     overflow: hidden;
-    width: 75px;
+    width: 56px;
     height: 32px;
     margin-right: 6px;
+    position: relative;
 
     .tab {
       border: none;
     }
   }
   .tab-sports {
-    display: inline-flex;
-    position: relative;
+    @include simple-flex(center, center, row);
+    // display: inline-flex;
+    // position: relative;
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 6px;
     overflow: hidden;
-    width: 75px;
+    width: 68px;
     height: 32px;
     margin-right: 6px;
+    position: relative;
 
     .tab {
       border: none;
     }
   }
   .tab-auto {
-    display: inline-flex;
-    position: relative;
+    @include simple-flex(center, center, row);
+    // display: inline-flex;
+    // position: relative;
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 6px;
     overflow: hidden;
-    width: 75px;
+    width: 53px;
     height: 32px;
     margin-right: 6px;
+    position: relative;
 
     .tab {
       border: none;
     }
   }
   .tab-music {
-    display: inline-flex;
-    position: relative;
+    @include simple-flex(center, center, row);
+    // display: inline-flex;
+    // position: relative;
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 6px;
     overflow: hidden;
-    width: 75px;
+    width: 62px;
     height: 32px;
     margin-right: 6px;
+    position: relative;
 
     .tab {
       border: none;
@@ -164,9 +179,13 @@
 }
 
 .images {
-  @include simple-flex();
+  // @include simple-flex(space-between, center, row);
   flex-wrap: wrap;
   margin: 1px;
+
+  .rows {
+    @include simple-flex(space-between);
+  }
   img {
     width: 124px;
     height: 119.53px;

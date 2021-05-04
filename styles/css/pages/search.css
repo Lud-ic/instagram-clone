@@ -36,10 +36,13 @@ html {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
+  margin-top: 48px;
 }
 .container-search .search-bar {
   display: inline-flex;
+  margin-left: 8px;
+  box-sizing: border-box;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
@@ -67,12 +70,20 @@ html {
 
 .tabs {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
   margin-bottom: 7px;
+  margin-left: 8px;
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+.tabs::-webkit-scrollbar {
+  display: none;
 }
 .tabs .tab-IGTV {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   border: 1px solid #ccc;
   border-radius: 6px;
   overflow: hidden;
@@ -80,6 +91,7 @@ html {
   height: 32px;
   margin-right: 6px;
   cursor: pointer;
+  position: relative;
 }
 .tabs .tab-IGTV .tab-iconIGTV {
   width: 12.5px;
@@ -90,13 +102,18 @@ html {
   margin-left: 6px;
 }
 .tabs .tab-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 6px;
   overflow: hidden;
-  width: 75px;
+  width: 77px;
   height: 32px;
   margin-right: 6px;
+  position: relative;
 }
 .tabs .tab-shop .tab-iconShop {
   width: 12.5px;
@@ -107,69 +124,83 @@ html {
   margin-left: 6.5px;
 }
 .tabs .tab-style {
-  display: inline-flex;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 6px;
   overflow: hidden;
-  width: 75px;
+  width: 56px;
   height: 32px;
   margin-right: 6px;
+  position: relative;
 }
 .tabs .tab-style .tab {
   border: none;
 }
 .tabs .tab-sports {
-  display: inline-flex;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 6px;
   overflow: hidden;
-  width: 75px;
+  width: 68px;
   height: 32px;
   margin-right: 6px;
+  position: relative;
 }
 .tabs .tab-sports .tab {
   border: none;
 }
 .tabs .tab-auto {
-  display: inline-flex;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 6px;
   overflow: hidden;
-  width: 75px;
+  width: 53px;
   height: 32px;
   margin-right: 6px;
+  position: relative;
 }
 .tabs .tab-auto .tab {
   border: none;
 }
 .tabs .tab-music {
-  display: inline-flex;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 6px;
   overflow: hidden;
-  width: 75px;
+  width: 62px;
   height: 32px;
   margin-right: 6px;
+  position: relative;
 }
 .tabs .tab-music .tab {
   border: none;
 }
 
 .images {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
   flex-wrap: wrap;
   margin: 1px;
+}
+.images .rows {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
 }
 .images img {
   width: 124px;
