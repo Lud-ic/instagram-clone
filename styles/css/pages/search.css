@@ -46,7 +46,7 @@ html {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #767680;
+  background-color: rgba(118, 118, 128, 0.12);
   width: 327px;
   height: 36px;
 }
@@ -58,14 +58,16 @@ html {
   border: none;
   padding: 0.5rem 0.5rem 0.5rem 0;
   flex: 1;
-  opacity: 60%;
+  color: rgba(60, 60, 67, 0.6);
   font-size: 1.6rem;
+  background-color: rgba(118, 118, 128, 0.12);
 }
 .container-search .shape-search {
   width: 20px;
   height: 20px;
   margin: 10px;
   color: #979797;
+  cursor: pointer;
 }
 
 .tabs {
@@ -74,7 +76,8 @@ html {
   margin-left: 8px;
   position: relative;
   box-sizing: border-box;
-  overflow-x: auto;
+  overflow-y: auto;
+  overflow: scroll;
 }
 .tabs::-webkit-scrollbar {
   display: none;
@@ -84,6 +87,9 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #262626;
   border: 1px solid #ccc;
   border-radius: 6px;
   overflow: hidden;
@@ -106,6 +112,9 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #262626;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -128,6 +137,9 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #262626;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -145,6 +157,9 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #262626;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -162,6 +177,9 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #262626;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -179,6 +197,9 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #262626;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 6px;

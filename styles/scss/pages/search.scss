@@ -14,7 +14,7 @@
     // border:  solid #ccc;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #767680;
+    background-color: rgba(118, 118, 128, 0.12);
     // opacity: 12%;
     width: 327px;
     height: 36px;
@@ -25,6 +25,7 @@
       width: 13px;
       margin: 11.25px 9.07px 11.07px 11.25px;
       // color: #3c3c43;
+      // background-color: rgba(118, 118, 128, 0.12);
       // opacity: 60%;
     }
     
@@ -32,9 +33,11 @@
       border: none;
       padding: 0.5rem 0.5rem 0.5rem 0;
       flex: 1;
-      // color: #3c3c43;
-      opacity: 60%;
+      color: rgba(60, 60, 67, 0.6);;
+      // opacity: 60%;
       font-size: 1.6rem ;
+      background-color: rgba(118, 118, 128, 0.12);
+      // position: ;
     }
   }
   
@@ -42,7 +45,8 @@
     width: 20px;
     height: 20px;
     margin: 10px;
-    color: #979797
+    color: #979797;
+    cursor: pointer;
   }
 }
 
@@ -52,7 +56,8 @@
   margin-left: 8px;
   position: relative;
   box-sizing: border-box;
-  overflow-x: auto;
+  overflow-y: auto;
+  overflow: scroll;
 
   &::-webkit-scrollbar {
     display: none;
@@ -61,6 +66,9 @@
 
   .tab-IGTV{
     @include simple-flex(center, center, row);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $text-color;
     // display: inline-flex;
     // position: relative;
     
@@ -89,6 +97,9 @@
     @include simple-flex(center, center, row);
     // display: inline-flex;
     // position: relative;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $text-color;
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -111,6 +122,9 @@
   }
   .tab-style {
     @include simple-flex(center, center, row);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $text-color;
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -128,6 +142,9 @@
     @include simple-flex(center, center, row);
     // display: inline-flex;
     // position: relative;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $text-color;
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -145,6 +162,9 @@
     @include simple-flex(center, center, row);
     // display: inline-flex;
     // position: relative;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $text-color;
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -162,6 +182,9 @@
     @include simple-flex(center, center, row);
     // display: inline-flex;
     // position: relative;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $text-color;
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 6px;
