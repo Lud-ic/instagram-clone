@@ -38,6 +38,7 @@ html {
   flex-direction: row;
   margin-top: 40px;
   margin-bottom: 11px;
+  margin-right: 18px;
 }
 .container-top .privacy {
   display: flex;
@@ -57,6 +58,15 @@ html {
   font-weight: 600;
   margin-right: 5px;
 }
+.container-top .privacy .container-menu-icon {
+  align-self: end;
+  cursor: pointer;
+}
+.container-top .privacy .container-menu-icon .menu-icon {
+  width: 20.5px;
+  height: 17.5;
+}
+
 .info .container-datas {
   display: flex;
   justify-content: flex-start;
@@ -88,12 +98,32 @@ html {
   flex-direction: column;
   cursor: pointer;
 }
+.info .container-datas .numbers-info .posts-info .posts-numb {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #262626;
+}
+.info .container-datas .numbers-info .posts-info .title-info {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #262626;
+}
 .info .container-datas .numbers-info .followers-info {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   cursor: pointer;
+}
+.info .container-datas .numbers-info .followers-info .posts-numb {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #262626;
+}
+.info .container-datas .numbers-info .followers-info .title-info {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #262626;
 }
 .info .container-datas .numbers-info .following-info {
   display: flex;
@@ -102,8 +132,31 @@ html {
   flex-direction: column;
   cursor: pointer;
 }
+.info .container-datas .numbers-info .following-info .posts-numb {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #262626;
+}
+.info .container-datas .numbers-info .following-info .title-info {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #262626;
+}
 .info .name-bio {
   margin-left: 16px;
+}
+.info .name-bio .name-profile {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #262626;
+}
+.info .name-bio .bio {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #262626;
+}
+.info .name-bio .bio .tag {
+  color: #3797ef;
 }
 .info .container-ed-profile {
   display: flex;
@@ -112,6 +165,9 @@ html {
   flex-direction: row;
   margin: 16px 0px;
   cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #262626;
 }
 .info .container-ed-profile .ed-profile {
   display: flex;
@@ -142,6 +198,11 @@ html {
   border-radius: 50%;
   background-size: cover;
 }
+.info .container-stories .add-stories .title-stories {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #262626;
+}
 .info .container-stories .stories-friends {
   display: flex;
   justify-content: center;
@@ -156,6 +217,11 @@ html {
   border-radius: 50%;
   background-size: cover;
   margin-bottom: 7px;
+}
+.info .container-stories .stories-friends .title-stories {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #262626;
 }
 .info .container-stories .stories-sport {
   display: flex;
@@ -172,6 +238,11 @@ html {
   background-size: cover;
   margin-bottom: 7px;
 }
+.info .container-stories .stories-sport .title-stories {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #262626;
+}
 .info .container-stories .stories-design {
   display: flex;
   justify-content: center;
@@ -187,6 +258,12 @@ html {
   background-size: cover;
   margin-bottom: 7px;
 }
+.info .container-stories .stories-design .title-stories {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #262626;
+}
+
 .nav-pic {
   display: flex;
   justify-content: space-around;
