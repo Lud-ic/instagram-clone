@@ -2,199 +2,216 @@
 
 .head-bar {
   @include simple-flex(space-around, center, row);
+  margin-top: 20px;
+  margin-bottom: 11px;
 
-  .following-bar{
+  .following-bar {
     align-self: center;
     font-size: 1.6rem;
     margin-top: 11px;
   }
 
-  .you-bar{
+  .you-bar {
     font-size: 1.6rem;
     margin-top: 11px;
   }
 }
 
+.container-line {
+  @include simple-flex(flex-end, center, row);
+
+  .line-dark {
+    width: 50%;
+    height: 1px;
+    border: none;
+    // text-align:left;
+    margin-left: 0px;
+    background-color: #262626;
+  }
+}
+
 .f-request-bar {
-  @include simple-flex ();
+  @include simple-flex();
 
   .request {
     font-size: 1.5rem;
+    margin: 14px 0px 14px 16px;
   }
 }
 
 .container-general {
-.container-new {
-  
-  .container-new-title {
-    
+  @include simple-flex(flex-start, flex-start, column);
+  margin-right: 16px;
+  margin-left: 16px;
+  .container-new {
+    height: 106px;
+
+    .container-new-title {
+      margin-bottom: 21px; 
+    }
+
+    .container-new-info {
+      @include simple-flex(flex-start, center, row);
+      width: 375px;
+      gap: 12px;
+      box-sizing: border-box;
+
+      .img-profiles {
+        @include box-round (44px);
+        
+      }
+
+      .reaction-type {
+        .time {
+        }
+      }
+
+      .container-new-pic {
+        display: flex;
+        align-self: flex-end;
+        margin-right: 16px;
+        
+      }
+    }
   }
-  
-  .container-new-info {
-    @include simple-flex (flex-start, center, row);
-    width: 375px;
-    
+
+  .container-today {
+    height: 106px ;
+    box-sizing: border-box;
+    .container-today-title {
+    }
+
+    .container-today-info {
+      @include simple-flex(flex-start, center, row);
+      width: 375px;
+      // gap: 12px;
+      box-sizing: border-box;
+
+      .img-profiles-dub {
+        @include box-round (32px);
+        margin: 8px auto 20px auto;
+        box-sizing: border-box;
+        position: absolute;
+      }
+      .img-profiles-dubtwo {
+        @include box-round (32px);
+        margin: 20px auto 8px 12px;
+        box-sizing: border-box;
+        position: absolute;
+        
+      }
+      .reaction-type {
+        .time {
+        }
+      }
+
+      .container-today-pic {
+      }
+    }
+  }
+
+  .container-week {
+    @include simple-flex(flex-start, flex-start, column);
+    height: 317px;
+
+    .container-week-title {
+    }
+
+    .container-week-info {
+      @include simple-flex(flex-start, flex-start, column);
+
+      .conteiner-week-one {
+        @include simple-flex(flex-start, center, row);
+        height: 91px;
+        .img-profiles {
+          @include box-round (44px);
+        }
+
+        .reaction-type {
+          .time {
+          }
+        }
+
+        .container-week-pic {
+        }
+        .like-icon {
+        }
+        .week-reply {
+        }
+      }
+
+      .conteiner-week-two {
+        @include simple-flex(flex-start, center, row);
+        height: 60px;
+
+        .img-profiles {
+          @include box-round (44px);
+        }
+        
+
+        .reaction-type {
+          .time {
+          }
+        }
+
+        .box-message {
+        }
+      }
+      .conteiner-week-three {
+        @include simple-flex(flex-start, center, row);
+        height: 60px;
+
+
+        .img-profiles {
+          @include box-round (44px);
+        }
+
+        .reaction-type {
+          .time {
+          }
+        }
+
+        .box-message {
+        }
+      }
+      .conteiner-week-four {
+        @include simple-flex(flex-start, center, row);
+        height: 60px;
+
+
+        .img-profiles {
+          @include box-round (44px);
+        }
+
+        .reaction-type {
+          .time {
+          }
+        }
+
+        .box-follow {
+        }
+      }
+    }
+  }
+
+  .container-month {
+    @include simple-flex(flex-start, flex-start, column);
+    height: 60px;
+
+    .container-month-title {
+      // @include simple-flex(flex-start, center, row);
+    }
+
     .img-profiles {
-
+      @include box-round (44px);
     }
 
     .reaction-type {
-
       .time {
-
       }
     }
 
-    .container-new-pic {
-      display: flex;
-      align-self: flex-end;
-      
-
-      
-    }
-
-  }
-}
-
-.container-today {
-  
-  .container-today-title {
-    
-  }
-  
-  .container-today-info {
-    @include simple-flex (flex-start, center, row);
-    
-    .img-profiles-dub {
-
-    }
-    .img-profiles-dubtwo {
-
-    }
-    .reaction-type {
-
-      .time {
-
-      }
-    }
-
-    .container-today-pic {
-
-      
-    }
-
-  }
-}
-
-.container-week {
-  
-  .container-week-title {
-    
-  }
-  
-  .container-week-info {
-    @include simple-flex (flex-start, center, row);
-
-    .conteiner-week-one{
-
-      .img-profiles {
-  
-      }
-  
-      .reaction-type {
-  
-        .time {
-  
-        }
-      }
-  
-      .container-week-pic {
-             
-      }
-      .like-icon{
-  
-      }
-      .week-reply {
-  
-      }
-    }
-    
-    .conteiner-week-two{
-
-      .img-profiles {
-
-      }
-
-      .reaction-type {
-
-        .time {
-
-        }
-
-      }
-
-      .box-message {
-
-      }
-    }
-    .conteiner-week-three{
-
-      .img-profiles {
-
-      }
-
-      .reaction-type {
-
-        .time {
-
-        }
-
-      }
-      
-      .box-message {
-
-      }
-    }
-    .conteiner-week-four{
-
-      .img-profiles {
-
-      }
-
-      .reaction-type {
-
-        .time {
-
-        }
-
-      }
-      
-      .box-follow {
-
-      }
+    .box-message {
     }
   }
-}
-
-.container-month {
-
-  .container-month-title {
-
-  }
-
-  .img-profiles {
-
-  }
-
-  .reaction-type {
-    .time {
-
-    }
-  }
-
-  .box-message {
-
-  }
-
-}
 }

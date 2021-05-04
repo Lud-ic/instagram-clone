@@ -36,6 +36,8 @@ html {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 11px;
 }
 .head-bar .following-bar {
   align-self: center;
@@ -47,6 +49,20 @@ html {
   margin-top: 11px;
 }
 
+.container-line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.container-line .line-dark {
+  width: 50%;
+  height: 1px;
+  border: none;
+  margin-left: 0px;
+  background-color: #262626;
+}
+
 .f-request-bar {
   display: flex;
   justify-content: flex-start;
@@ -55,30 +71,150 @@ html {
 }
 .f-request-bar .request {
   font-size: 1.5rem;
+  margin: 14px 0px 14px 16px;
 }
 
+.container-general {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.container-general .container-new {
+  height: 106px;
+}
+.container-general .container-new .container-new-title {
+  margin-bottom: 21px;
+}
 .container-general .container-new .container-new-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   width: 375px;
+  gap: 12px;
+  box-sizing: border-box;
+}
+.container-general .container-new .container-new-info .img-profiles {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: cover;
 }
 .container-general .container-new .container-new-info .container-new-pic {
   display: flex;
   align-self: flex-end;
+  margin-right: 16px;
+}
+.container-general .container-today {
+  height: 106px;
+  box-sizing: border-box;
 }
 .container-general .container-today .container-today-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+  width: 375px;
+  box-sizing: border-box;
+}
+.container-general .container-today .container-today-info .img-profiles-dub {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-size: cover;
+  margin: 8px auto 20px auto;
+  box-sizing: border-box;
+  position: absolute;
+}
+.container-general .container-today .container-today-info .img-profiles-dubtwo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-size: cover;
+  margin: 20px auto 8px 12px;
+  box-sizing: border-box;
+  position: absolute;
+}
+.container-general .container-week {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 317px;
 }
 .container-general .container-week .container-week-info {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container-general .container-week .container-week-info .conteiner-week-one {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+  height: 91px;
+}
+.container-general .container-week .container-week-info .conteiner-week-one .img-profiles {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: cover;
+}
+.container-general .container-week .container-week-info .conteiner-week-two {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+}
+.container-general .container-week .container-week-info .conteiner-week-two .img-profiles {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: cover;
+}
+.container-general .container-week .container-week-info .conteiner-week-three {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+}
+.container-general .container-week .container-week-info .conteiner-week-three .img-profiles {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: cover;
+}
+.container-general .container-week .container-week-info .conteiner-week-four {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+}
+.container-general .container-week .container-week-info .conteiner-week-four .img-profiles {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: cover;
+}
+.container-general .container-month {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 60px;
+}
+.container-general .container-month .img-profiles {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=likes.css.map */
