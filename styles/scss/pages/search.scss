@@ -24,6 +24,7 @@
     .search-bar-icon {
       width: 13px;
       margin: 11.25px 9.07px 11.07px 11.25px;
+      border: none;
       // color: #3c3c43;
       // background-color: rgba(118, 118, 128, 0.12);
       // opacity: 60%;
@@ -33,11 +34,13 @@
       border: none;
       padding: 0.5rem 0.5rem 0.5rem 0;
       flex: 1;
-      color: rgba(60, 60, 67, 0.6);;
+      color: rgba(60, 60, 67, 1);;
       // opacity: 60%;
+      background: transparent;
       font-size: 1.6rem ;
-      background-color: rgba(118, 118, 128, 0.12);
+      // background-color: rgba(118, 118, 128, 0.12);
       // position: ;
+
     }
   }
   
@@ -56,9 +59,8 @@
   margin-left: 8px;
   position: relative;
   box-sizing: border-box;
-  overflow-y: auto;
-  overflow: scroll;
-
+  overflow-x: auto;
+  
   &::-webkit-scrollbar {
     display: none;
   }
