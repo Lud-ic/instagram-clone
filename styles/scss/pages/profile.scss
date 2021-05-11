@@ -1,303 +1,331 @@
 @import "..//styles.scss";
 
-.container-top {
-  @include simple-flex(space-between, center, row);
-  margin-top: 40px;
-  margin-bottom: 11px;
-  margin-right: 18px;
-
-  .privacy {
-    @include simple-flex(center, center, row);
-    margin-top: 10px;
-    
-
-    .privacy-icon {
-      width: 8.75px;
-      height: 11.75px;
-      margin-left: 142px;
-      margin-right: 6px;
-    }
-
-    .user {
-      font-size: 1.6rem;
-      font-weight: 600;
-      margin-right: 5px;
-    }
-
-    .arrow-icon {
-      // margin-left: 5px;
-      // margin-top: 15px;
-    }
-
-    .container-menu-icon {
-      align-self: end;
-      
-      cursor: pointer;
-
-      .menu-icon {
-        width: 20.5px;
-        height: 17.5;
-        
-
-      }
-    }
+// body {
+//   
+//   }
+// }
+.profile-container {
+  // display: none;
+  @media (min-width: $breakpoint-tablet) {
+        max-width: 975px;
+        @include simple-flex (center, center, column);
+        margin: auto;
   }
 
-  // .container-menu-icon {
-  //   align-self: end;
-  //   margin-right: 18px;
-  //   cursor: pointer;
+  .container-top {
+    @include simple-flex(space-between, center, row);
+    margin-top: 40px;
+    margin-bottom: 11px;
+    margin-right: 18px;
 
-  //   // .menu-icon{
+    .privacy {
+      @include simple-flex(center, center, row);
+      margin-top: 10px;
 
-  //   // }
-
-  //   #menu-icon{
-  //     cursor: pointer;
-  //     position: fixed;
-  //     top: 10px;
-  //     right: 20px;
-  //     font-size: 30px;
-  //   }
-
-  //   #menu-toggle {
-  //     // display: none;
-  //   }
-
-  //   .side-menu {
-  //     @include simple-flex (flex-start, center, column);
-  //     transition: all ease-in-out 0.3s;
-  //     margin-left:100%;
-  //     height: 100%;
-  //     width: 251px;
-  //     background-color: aqua;
-  //     left: 251px;
-  //   }
-
-  //   #menu-toggle:checked ~ #side-menu {
-  //     transform: translateX(100px);
-  // }
-
-  // }
-}
-
-.info {
-  .container-datas {
-    @include simple-flex(flex-start, center, row);
-
-    .img_profile {
-      @include box-round(86px);
-      margin-left: 11px;
-      margin-bottom: 17px;
-      margin-right: 40px;
-      cursor: pointer;
-    }
-
-    .numbers-info {
-      @include simple-flex(space-around, center, row);
-      width: 100%;
-      box-sizing: border-box;
-
-      .posts-info {
-        @include simple-flex(center, center, column);
-        cursor: pointer;
-
-        .posts-numb {
-          font-size: 1.6rem;
-          font-weight: 600;
-          color: $text-color;
-        }
-        .title-info {
-          font-size: 1.3rem;
-          font-weight: normal;
-          color: $text-color;
-        }
+      .privacy-icon {
+        width: 8.75px;
+        height: 11.75px;
+        margin-left: 142px;
+        margin-right: 6px;
       }
-      .followers-info {
-        @include simple-flex(center, center, column);
-        cursor: pointer;
 
-        .posts-numb {
-          font-size: 1.6rem;
-          font-weight: 600;
-          color: $text-color;
-        }
-        .title-info {
-          font-size: 1.3rem;
-          font-weight: normal;
-          color: $text-color;
-        }
+      .user {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-right: 5px;
       }
-      .following-info {
-        @include simple-flex(center, center, column);
+
+      .arrow-icon {
+        // margin-left: 5px;
+        // margin-top: 15px;
+      }
+
+      .container-menu-icon {
+        align-self: end;
+
         cursor: pointer;
 
-        .posts-numb {
-          font-size: 1.6rem;
-          font-weight: 600;
-          color: $text-color;
-        }
-        .title-info {
-          font-size: 1.3rem;
-          font-weight: normal;
-          color: $text-color;
+        .menu-icon {
+          width: 20.5px;
+          height: 17.5;
         }
       }
     }
+
+    // .container-menu-icon {
+    //   align-self: end;
+    //   margin-right: 18px;
+    //   cursor: pointer;
+
+    //   // .menu-icon{
+
+    //   // }
+
+    //   #menu-icon{
+    //     cursor: pointer;
+    //     position: fixed;
+    //     top: 10px;
+    //     right: 20px;
+    //     font-size: 30px;
+    //   }
+
+    //   #menu-toggle {
+    //     // display: none;
+    //   }
+
+    //   .side-menu {
+    //     @include simple-flex (flex-start, center, column);
+    //     transition: all ease-in-out 0.3s;
+    //     margin-left:100%;
+    //     height: 100%;
+    //     width: 251px;
+    //     background-color: aqua;
+    //     left: 251px;
+    //   }
+
+    //   #menu-toggle:checked ~ #side-menu {
+    //     transform: translateX(100px);
+    // }
+
+    // }
   }
 
-  .name-bio {
-    margin-left: 16px;
-    .name-profile {
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: $text-color;
-    }
-    .bio {
-      font-size: 1.2rem;
-      font-weight: normal;
-      color: $text-color;
+  .info {
+    .container-datas {
+      @include simple-flex(flex-start, center, row);
 
-      .tag {
-        color: $highlight-color;
+      .img_profile {
+        @include box-round(86px);
+        margin-left: 11px;
+        margin-bottom: 17px;
+        margin-right: 40px;
+        cursor: pointer;
+      }
+
+      .numbers-info {
+        @include simple-flex(space-around, center, row);
+        width: 100%;
+        box-sizing: border-box;
+
+        .posts-info {
+          @include simple-flex(center, center, column);
+          cursor: pointer;
+
+          .posts-numb {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $text-color;
+          }
+          .title-info {
+            font-size: 1.3rem;
+            font-weight: normal;
+            color: $text-color;
+          }
+        }
+        .followers-info {
+          @include simple-flex(center, center, column);
+          cursor: pointer;
+
+          .posts-numb {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $text-color;
+          }
+          .title-info {
+            font-size: 1.3rem;
+            font-weight: normal;
+            color: $text-color;
+          }
+        }
+        .following-info {
+          @include simple-flex(center, center, column);
+          cursor: pointer;
+
+          .posts-numb {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $text-color;
+          }
+          .title-info {
+            font-size: 1.3rem;
+            font-weight: normal;
+            color: $text-color;
+          }
+        }
       }
     }
-  }
 
-  .container-ed-profile {
-    @include simple-flex(center, center);
-    margin: 16px 0px;
-    cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: $text-color;
+    .name-bio {
+      margin-left: 16px;
+      .name-profile {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $text-color;
+      }
+      .bio {
+        font-size: 1.2rem;
+        font-weight: normal;
+        color: $text-color;
 
-    .ed-profile {
+        .tag {
+          color: $highlight-color;
+        }
+      }
+    }
+
+    .container-ed-profile {
       @include simple-flex(center, center);
+      margin: 16px 0px;
       cursor: pointer;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      overflow: hidden;
-      width: 343px;
-      height: 29px;
-    }
-  }
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: $text-color;
 
-  .container-stories {
-    @include simple-flex();
-    margin-bottom: 16px;
-
-    .add-stories {
-      margin-right: 22px;
-      cursor: pointer;
-
-      .img-add-stories {
-        @include box-round(75px);
-      }
-
-      .title-stories {
-        font-size: 1.2rem;
-        font-weight: normal;
-        color: $text-color;
+      .ed-profile {
+        @include simple-flex(center, center);
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        overflow: hidden;
+        width: 343px;
+        height: 29px;
       }
     }
 
-    .stories-friends {
-      @include simple-flex(center, center, column);
-      margin-right: 26px;
-      cursor: pointer;
+    .container-stories {
+      @include simple-flex();
+      margin-bottom: 16px;
 
-      .img-friends {
-        @include box-round(56px);
-        margin-bottom: 7px;
+      .add-stories {
+        margin-right: 22px;
+        cursor: pointer;
+
+        .img-add-stories {
+          @include box-round(75px);
+
+          @media (min-width: $breakpoint-tablet) {
+            @include box-round(77px);
+          }
+        }
+
+        .title-stories {
+          font-size: 1.2rem;
+          font-weight: normal;
+          color: $text-color;
+        }
       }
 
-      .title-stories {
-        font-size: 1.2rem;
-        font-weight: normal;
-        color: $text-color;
+      .stories-friends {
+        @include simple-flex(center, center, column);
+        margin-right: 26px;
+        cursor: pointer;
+
+        .img-friends {
+          @include box-round(56px);
+          margin-bottom: 7px;
+        }
+
+        .title-stories {
+          font-size: 1.2rem;
+          font-weight: normal;
+          color: $text-color;
+        }
+      }
+
+      .stories-sport {
+        @include simple-flex(center, center, column);
+        margin-right: 26px;
+        cursor: pointer;
+
+        .img-sport {
+          @include box-round(56px);
+          margin-bottom: 7px;
+        }
+
+        .title-stories {
+          font-size: 1.2rem;
+          font-weight: normal;
+          color: $text-color;
+        }
+      }
+
+      .stories-design {
+        @include simple-flex(center, center, column);
+        margin-right: 26px;
+        cursor: pointer;
+
+        .img-design {
+          @include box-round(56px);
+          margin-bottom: 7px;
+        }
+
+        .title-stories {
+          font-size: 1.2rem;
+          font-weight: normal;
+          color: $text-color;
+        }
       }
     }
+  }
 
-    .stories-sport {
-      @include simple-flex(center, center, column);
-      margin-right: 26px;
+  .nav-pic {
+    @include simple-flex(space-around, center, row);
+    margin-bottom: 11.5px;
+
+    .nav-grid {
       cursor: pointer;
-
-      .img-sport {
-        @include box-round(56px);
-        margin-bottom: 7px;
-      }
-
-      .title-stories {
-        font-size: 1.2rem;
-        font-weight: normal;
-        color: $text-color;
-      }
+      padding: 0 83px;
+      box-sizing: border-box;
     }
 
-    .stories-design {
-      @include simple-flex(center, center, column);
-      margin-right: 26px;
+    .nav-tagpic {
       cursor: pointer;
-
-      .img-design {
-        @include box-round(56px);
-        margin-bottom: 7px;
-      }
-
-      .title-stories {
-        font-size: 1.2rem;
-        font-weight: normal;
-        color: $text-color;
-      }
+      padding: 0 83px;
+      box-sizing: border-box;
     }
   }
-}
+  .container-line {
+    @include simple-flex(flex-start, center, row);
+    .line-dark {
+      width: 50%;
+      height: 1px;
+      text-align: left;
+      margin-bottom: 1px;
+      background-color: $text-color;
+      border: none;
+    }
 
-.nav-pic {
-  @include simple-flex(space-around, center, row);
-  margin-bottom: 11.5px;
-
-  .nav-grid {
-    cursor: pointer;
-    padding: 0 83px;
-    box-sizing: border-box;
+    // .line-light {
+    //   width:50%;
+    //   text-align:left;
+    //   margin-left:0px;
+    //   color:;
+    // }
   }
 
-  .nav-tagpic {
-    cursor: pointer;
-    padding: 0 83px;
-    box-sizing: border-box;
-  }
-}
-.container-line {
-  @include simple-flex(flex-start, center, row);
-  .line-dark {
-    width: 50%;
-    height: 1px;
-    text-align: left;
-    margin-bottom: 1px;
-    background-color: $text-color;
-    border: none;
-  }
+  .pictures {
+    @media (min-width: $breakpoint-tablet) {
 
-  // .line-light {
-  //   width:50%;
-  //   text-align:left;
-  //   margin-left:0px;
-  //   color:;
-  // }
-}
+    }
+    .rows {
+      @include simple-flex(space-around);
+      margin-bottom: 1px;
+      @media (min-width: $breakpoint-tablet) {
+        gap: 28px;
+        @include simple-flex(space-between);
+        margin-bottom: 28px;;
+        
+      }
 
-.pictures {
-  .rows {
-    @include simple-flex(space-around);
-    // margin-bottom: 1px;
+      .pic-posts {
+        width: 124px;
+        height: 124px;
 
-    .pic-posts {
-      width: 124px;
-      height: 124px;
+        @media (min-width: $breakpoint-tablet) {
+          width: 287px;
+          height: 287px;
+        }
+      }
     }
   }
 }
