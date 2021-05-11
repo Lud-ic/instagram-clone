@@ -100,6 +100,11 @@
         margin-bottom: 17px;
         margin-right: 40px;
         cursor: pointer;
+        
+        @media (min-width: $breakpoint-tablet) {
+          @include box-round(150px);
+
+        }
       }
 
       .numbers-info {
@@ -189,6 +194,11 @@
         overflow: hidden;
         width: 343px;
         height: 29px;
+
+        @media (min-width: $breakpoint-tablet) {
+          width: 93px;
+          height: 30px;
+        }
       }
     }
 
@@ -204,7 +214,7 @@
           @include box-round(75px);
 
           @media (min-width: $breakpoint-tablet) {
-            @include box-round(77px);
+            @include box-round(100px);
           }
         }
 
@@ -223,6 +233,10 @@
         .img-friends {
           @include box-round(56px);
           margin-bottom: 7px;
+          @media (min-width: $breakpoint-tablet) {
+            @include box-round(77px);
+
+          }
         }
 
         .title-stories {
@@ -236,10 +250,16 @@
         @include simple-flex(center, center, column);
         margin-right: 26px;
         cursor: pointer;
+        
 
         .img-sport {
           @include box-round(56px);
           margin-bottom: 7px;
+
+          @media (min-width: $breakpoint-tablet) {
+            @include box-round(77px);
+
+          }
         }
 
         .title-stories {
@@ -257,6 +277,12 @@
         .img-design {
           @include box-round(56px);
           margin-bottom: 7px;
+
+          @media (min-width: $breakpoint-tablet) {
+            @include box-round(77px);
+
+          }
+
         }
 
         .title-stories {
