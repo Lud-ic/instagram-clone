@@ -1,15 +1,15 @@
 @import "..//styles.scss";
 
 // body {
-//   
+//
 //   }
 // }
 .profile-container {
   // display: none;
   @media (min-width: $breakpoint-tablet) {
-        max-width: 975px;
-        @include simple-flex (center, center, column);
-        margin: auto;
+    max-width: 975px;
+    @include simple-flex(center, center, column);
+    margin: auto;
   }
 
   .container-top {
@@ -17,6 +17,9 @@
     margin-top: 40px;
     margin-bottom: 11px;
     margin-right: 18px;
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
 
     .privacy {
       @include simple-flex(center, center, row);
@@ -42,12 +45,19 @@
 
       .container-menu-icon {
         align-self: end;
-
         cursor: pointer;
+        // // @media (min-width: $breakpoint-tablet) {
+        // //   display: none;
+
+        // }
 
         .menu-icon {
           width: 20.5px;
           height: 17.5;
+          // @media (min-width: $breakpoint-tablet) {
+          //   display: none;
+
+          // }
         }
       }
     }
@@ -185,6 +195,9 @@
       font-size: 1.3rem;
       font-weight: 600;
       color: $text-color;
+      @media (min-width: $breakpoint-tablet) {
+        display: none;
+      }
 
       .ed-profile {
         @include simple-flex(center, center);
@@ -235,7 +248,6 @@
           margin-bottom: 7px;
           @media (min-width: $breakpoint-tablet) {
             @include box-round(77px);
-
           }
         }
 
@@ -250,7 +262,6 @@
         @include simple-flex(center, center, column);
         margin-right: 26px;
         cursor: pointer;
-        
 
         .img-sport {
           @include box-round(56px);
@@ -258,7 +269,6 @@
 
           @media (min-width: $breakpoint-tablet) {
             @include box-round(77px);
-
           }
         }
 
@@ -280,9 +290,7 @@
 
           @media (min-width: $breakpoint-tablet) {
             @include box-round(77px);
-
           }
-
         }
 
         .title-stories {
@@ -331,7 +339,6 @@
 
   .pictures {
     @media (min-width: $breakpoint-tablet) {
-
     }
     .rows {
       @include simple-flex(space-around);
@@ -339,8 +346,7 @@
       @media (min-width: $breakpoint-tablet) {
         gap: 28px;
         @include simple-flex(space-between);
-        margin-bottom: 28px;;
-        
+        margin-bottom: 28px;
       }
 
       .pic-posts {

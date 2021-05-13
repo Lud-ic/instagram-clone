@@ -55,6 +55,11 @@ html {
   margin-bottom: 11px;
   margin-right: 18px;
 }
+@media (min-width: 768px) {
+  .profile-container .container-top {
+    display: none;
+  }
+}
 .profile-container .container-top .privacy {
   display: flex;
   justify-content: center;
@@ -190,6 +195,11 @@ html {
   font-size: 1.3rem;
   font-weight: 600;
   color: #262626;
+}
+@media (min-width: 768px) {
+  .profile-container .info .container-ed-profile {
+    display: none;
+  }
 }
 .profile-container .info .container-ed-profile .ed-profile {
   display: flex;
