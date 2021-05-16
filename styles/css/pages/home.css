@@ -42,12 +42,14 @@ html {
 
 @media only screen and (min-width: 768px) {
   .tab-bar-top {
+    width: 975px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     min-height: 54px;
-    background-color: #811e1e;
+    background-color: #fafafa;
+    margin: auto;
   }
   .tab-bar-top .logo {
     width: 103px;
@@ -94,7 +96,17 @@ html {
   }
 }
 
-header {
+@media (min-width: 768px) {
+  .profile-container {
+    max-width: 975px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+.profile-container header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,32 +118,32 @@ header {
   box-sizing: border-box;
 }
 @media (min-width: 768px) {
-  header {
+  .profile-container header {
     background-color: #fafafa;
+    display: none;
   }
 }
-header .logo-img {
+.profile-container header .logo-img {
   width: 105px;
   height: auto;
 }
-header .action-icon {
+.profile-container header .action-icon {
   width: 24px;
   height: auto;
   cursor: pointer;
 }
-
-main {
+.profile-container main {
   display: flex;
   max-width: 935px;
   margin: auto;
   gap: 28px;
 }
 @media (min-width: 768px) {
-  main {
+  .profile-container main {
     padding-top: 30px;
   }
 }
-main .page-container .stories-container {
+.profile-container main .page-container .stories-container {
   display: flex;
   padding: 9px 10px;
   gap: 20px;
@@ -139,19 +151,19 @@ main .page-container .stories-container {
   box-sizing: border-box;
 }
 @media (min-width: 768px) {
-  main .page-container .stories-container {
+  .profile-container main .page-container .stories-container {
     border: 1px solid #dbdbdb;
     background-color: #fafafa;
     margin-bottom: 24px;
   }
 }
-main .page-container .stories-container::-webkit-scrollbar {
+.profile-container main .page-container .stories-container::-webkit-scrollbar {
   display: none;
 }
-main .page-container .stories-container .story-item {
+.profile-container main .page-container .stories-container .story-item {
   text-align: center;
 }
-main .page-container .stories-container .story-item .content-img {
+.profile-container main .page-container .stories-container .story-item .content-img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -162,14 +174,14 @@ main .page-container .stories-container .story-item .content-img {
   position: relative;
   margin-bottom: 5px;
 }
-main .page-container .stories-container .story-item .content-img .story-img {
+.profile-container main .page-container .stories-container .story-item .content-img .story-img {
   border: 2px solid #fff;
   width: 56px;
   height: 56px;
   border-radius: 50%;
   background-size: cover;
 }
-main .page-container .stories-container .story-item .content-img .alert-live {
+.profile-container main .page-container .stories-container .story-item .content-img .alert-live {
   bottom: -3px;
   padding: 2px 4px;
   border-radius: 3px;
@@ -178,167 +190,172 @@ main .page-container .stories-container .story-item .content-img .alert-live {
   color: #fff;
   background: linear-gradient(215deg, #833ab4, #fd1d1d, #fcb045);
 }
-main .page-container .feed-container {
+.profile-container main .page-container .feed-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
 }
 @media (min-width: 768px) {
-  main .page-container .feed-container {
+  .profile-container main .page-container .feed-container {
     gap: 60px;
     margin-bottom: 60px;
   }
 }
-main .page-container .feed-container .card-post {
+.profile-container main .page-container .feed-container .card-post {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 768px) {
-  main .page-container .feed-container .card-post {
+  .profile-container main .page-container .feed-container .card-post {
     border: 1px solid #dbdbdb;
     background-color: #fafafa;
   }
 }
-main .page-container .feed-container .card-post .card-header {
+.profile-container main .page-container .feed-container .card-post .card-header {
   display: flex;
   align-items: center;
   padding: 11px 10px;
   gap: 10px;
 }
-main .page-container .feed-container .card-post .card-header .author-img {
+.profile-container main .page-container .feed-container .card-post .card-header .author-img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-size: cover;
 }
-main .page-container .feed-container .card-post .card-header .author-infos .author-name {
+.profile-container main .page-container .feed-container .card-post .card-header .author-infos .author-name {
   font-weight: 600;
   font-size: 1.3rem;
   margin-bottom: 1.5px;
 }
-main .page-container .feed-container .card-post .card-header .author-infos .author-location {
+.profile-container main .page-container .feed-container .card-post .card-header .author-infos .author-location {
   font-size: 1.1rem;
 }
-main .page-container .feed-container .card-post .card-header .more-icon {
+.profile-container main .page-container .feed-container .card-post .card-header .more-icon {
   cursor: pointer;
   margin-left: auto;
   height: 3px;
 }
-main .page-container .feed-container .card-post .post-img {
+.profile-container main .page-container .feed-container .card-post .post-img {
   width: 100%;
   height: 375px;
   object-fit: cover;
 }
-main .page-container .feed-container .card-post .post-infos {
+.profile-container main .page-container .feed-container .card-post .post-infos {
   padding: 12px 15px;
 }
-main .page-container .feed-container .card-post .post-infos .post-actions {
+.profile-container main .page-container .feed-container .card-post .post-infos .post-actions {
   display: flex;
   gap: 15px;
 }
-main .page-container .feed-container .card-post .post-infos .post-actions .action-icon {
+.profile-container main .page-container .feed-container .card-post .post-infos .post-actions .action-icon {
   height: 20px;
   width: auto;
   cursor: pointer;
 }
-main .page-container .feed-container .card-post .post-infos .post-actions .action-icon:last-child {
+.profile-container main .page-container .feed-container .card-post .post-infos .post-actions .action-icon:last-child {
   margin-left: auto;
 }
-main .page-container .feed-container .card-post .post-infos .likes-info {
+.profile-container main .page-container .feed-container .card-post .post-infos .likes-info {
   display: flex;
   align-items: center;
   padding: 12px 0 5px;
 }
-main .page-container .feed-container .card-post .post-infos .likes-info .people-like-img {
+.profile-container main .page-container .feed-container .card-post .post-infos .likes-info .people-like-img {
   width: 17px;
   height: 17px;
   border-radius: 50%;
   background-size: cover;
   margin-right: 6.5px;
 }
-main .page-container .feed-container .card-post .post-infos .likes-info .likes-quantity {
+.profile-container main .page-container .feed-container .card-post .post-infos .likes-info .likes-quantity {
   font-size: 1.3rem;
 }
-main .page-container .feed-container .card-post .post-infos .post-caption {
+.profile-container main .page-container .feed-container .card-post .post-infos .post-caption {
   font-size: 1.3rem;
 }
-main .aside-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  min-width: 300px;
+.profile-container main .aside-container {
+  display: none;
 }
-main .aside-container .user-infos {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  margin-bottom: 20px;
-}
-main .aside-container .user-infos img {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background-size: cover;
-  margin-right: 15px;
-}
-main .aside-container .user-infos .user-name {
-  font-weight: 600;
-  font-size: 1.4rem;
-  margin-bottom: 1.5px;
-}
-main .aside-container .user-infos .user-fullname {
-  color: #8e8e8e;
-  font-size: 1.4rem;
-}
-main .aside-container .user-infos .logout-action {
-  color: #0095f6;
-  font-weight: 600;
-  text-decoration: none;
-  margin-left: auto;
-}
-main .aside-container .suggestions-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 100%;
-}
-main .aside-container .suggestions-container .suggestion-title {
-  color: #8e8e8e;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-main .aside-container .suggestions-container .suggestion {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  margin-bottom: 10px;
-}
-main .aside-container .suggestions-container .suggestion img {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-size: cover;
-  margin-right: 15px;
-}
-main .aside-container .suggestions-container .suggestion .follow-action {
-  color: #0095f6;
-  font-weight: 600;
-  text-decoration: none;
-  margin-left: auto;
-}
-main .aside-container .suggestions-container .suggestion .suggestion-name {
-  font-size: 1.4rem;
-}
-main .aside-container .suggestions-container .suggestion .suggestion-common-followers {
-  color: #8e8e8e;
-  font-size: 1.2rem;
+@media (min-width: 768px) {
+  .profile-container main .aside-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 300px;
+  }
+  .profile-container main .aside-container .user-infos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .profile-container main .aside-container .user-infos img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-right: 15px;
+  }
+  .profile-container main .aside-container .user-infos .user-name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1.5px;
+  }
+  .profile-container main .aside-container .user-infos .user-fullname {
+    color: #8e8e8e;
+    font-size: 1.4rem;
+  }
+  .profile-container main .aside-container .user-infos .logout-action {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: auto;
+  }
+  .profile-container main .aside-container .suggestions-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+  .profile-container main .aside-container .suggestions-container .suggestion-title {
+    color: #8e8e8e;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .profile-container main .aside-container .suggestions-container .suggestion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .profile-container main .aside-container .suggestions-container .suggestion img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-right: 15px;
+  }
+  .profile-container main .aside-container .suggestions-container .suggestion .follow-action {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: auto;
+  }
+  .profile-container main .aside-container .suggestions-container .suggestion .suggestion-name {
+    font-size: 1.4rem;
+  }
+  .profile-container main .aside-container .suggestions-container .suggestion .suggestion-common-followers {
+    color: #8e8e8e;
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

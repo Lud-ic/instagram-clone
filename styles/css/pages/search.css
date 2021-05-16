@@ -42,12 +42,14 @@ html {
 
 @media only screen and (min-width: 768px) {
   .tab-bar-top {
+    width: 975px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     min-height: 54px;
-    background-color: #811e1e;
+    background-color: #fafafa;
+    margin: auto;
   }
   .tab-bar-top .logo {
     width: 103px;
@@ -96,6 +98,11 @@ html {
   margin-bottom: 9px;
   margin-top: 48px;
 }
+@media (min-width: 768px) {
+  .container-search {
+    display: none;
+  }
+}
 .container-search .search-bar {
   display: inline-flex;
   margin-left: 8px;
@@ -138,6 +145,11 @@ html {
 }
 .tabs::-webkit-scrollbar {
   display: none;
+}
+@media (min-width: 768px) {
+  .tabs {
+    display: none;
+  }
 }
 .tabs .tab-IGTV {
   display: flex;

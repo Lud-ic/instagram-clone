@@ -57,12 +57,14 @@ html {
 @media only screen and (min-width: $breakpoint-tablet) {
   .tab-bar-top {
     // display: none;
+    width: 975px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     min-height: 54px;
-    background-color: #811e1e;
+    background-color: $background-primary;
+    margin: auto;
 
     .logo {
       width: 103px;

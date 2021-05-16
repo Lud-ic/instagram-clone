@@ -6,248 +6,260 @@ body {
   }
 }
 
-header {
-  @include simple-flex(space-between, center, row);
-  width: 100%;
-  min-height: 44px;
-  background-color: $background-secondary;
-  padding: 10px 10px;
-  box-sizing: border-box;
-
+.profile-container {
+  // display: none;
   @media (min-width: $breakpoint-tablet) {
-    background-color: $background-primary;
+    max-width: 975px;
+    @include simple-flex(center, center, column);
+    margin: auto;
   }
+  header {
+    @include simple-flex(space-between, center, row);
+    width: 100%;
+    min-height: 44px;
+    background-color: $background-secondary;
+    padding: 10px 10px;
+    box-sizing: border-box;
 
-  .logo-img {
-    width: 105px;
-    height: auto;
-  }
-
-  .action-icon {
-    width: 24px;
-    height: auto;
-    cursor: pointer;
-  }
-}
-
-main {
-  display: flex;
-  max-width: 935px;
-  margin: auto;
-  gap: 28px;
-
-  @media (min-width: $breakpoint-tablet) {
-    padding-top: 30px;
-  }
-
-  .page-container {
-    .stories-container {
-      display: flex;
-      padding: 9px 10px;
-      gap: 20px;
-      overflow-x: auto;
-      box-sizing: border-box;
-
-      @media (min-width: $breakpoint-tablet) {
-        border: 1px solid rgba(219, 219, 219, 1);
-        background-color: $background-primary;
-        margin-bottom: 24px;
-      }
-
-      &::-webkit-scrollbar {
-        display: none;
-      }
-
-      .story-item {
-        text-align: center;
-        .content-img {
-          width: 64px;
-          height: 64px;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: linear-gradient(215deg, blue 10%, #fd1d1d, #fcb045);
-          position: relative;
-          margin-bottom: 5px;
-
-          .story-img {
-            border: 2px solid #fff;
-            @include box-round(56px);
-          }
-
-          .alert-live {
-            bottom: -3px;
-            padding: 2px 4px;
-            border-radius: 3px;
-            position: absolute;
-            border: 1px solid #fff;
-            color: $highlight-contrast-color;
-            background: linear-gradient(215deg, #833ab4, #fd1d1d, #fcb045);
-          }
-        }
-      }
+    @media (min-width: $breakpoint-tablet) {
+      background-color: $background-primary;
+      display: none;
     }
 
-    .feed-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      box-sizing: border-box;
+    .logo-img {
+      width: 105px;
+      height: auto;
+    }
 
-      @media (min-width: $breakpoint-tablet) {
-        gap: 60px;
-        margin-bottom: 60px;
-      }
+    .action-icon {
+      width: 24px;
+      height: auto;
+      cursor: pointer;
+    }
+  }
 
-      .card-post {
+  main {
+    display: flex;
+    max-width: 935px;
+    margin: auto;
+    gap: 28px;
+
+    @media (min-width: $breakpoint-tablet) {
+      padding-top: 30px;
+    }
+
+    .page-container {
+      .stories-container {
         display: flex;
-        flex-direction: column;
+        padding: 9px 10px;
+        gap: 20px;
+        overflow-x: auto;
+        box-sizing: border-box;
 
         @media (min-width: $breakpoint-tablet) {
           border: 1px solid rgba(219, 219, 219, 1);
           background-color: $background-primary;
+          margin-bottom: 24px;
         }
 
-        .card-header {
-          display: flex;
-          align-items: center;
-          padding: 11px 10px;
-          gap: 10px;
-
-          .author-img {
-            @include box-round(32px);
-          }
-
-          .author-infos {
-            .author-name {
-              font-weight: 600;
-              font-size: 1.3rem;
-              margin-bottom: 1.5px;
-            }
-
-            .author-location {
-              font-size: 1.1rem;
-            }
-          }
-
-          .more-icon {
-            cursor: pointer;
-            margin-left: auto;
-            height: 3px;
-          }
+        &::-webkit-scrollbar {
+          display: none;
         }
 
-        .post-img {
-          width: 100%;
-          height: 375px;
-          object-fit: cover;
-        }
-
-        .post-infos {
-          padding: 12px 15px;
-
-          .post-actions {
+        .story-item {
+          text-align: center;
+          .content-img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
             display: flex;
-            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(215deg, blue 10%, #fd1d1d, #fcb045);
+            position: relative;
+            margin-bottom: 5px;
 
-            .action-icon {
-              height: 20px;
-              width: auto;
-              cursor: pointer;
+            .story-img {
+              border: 2px solid #fff;
+              @include box-round(56px);
+            }
 
-              &:last-child {
-                margin-left: auto;
-              }
+            .alert-live {
+              bottom: -3px;
+              padding: 2px 4px;
+              border-radius: 3px;
+              position: absolute;
+              border: 1px solid #fff;
+              color: $highlight-contrast-color;
+              background: linear-gradient(215deg, #833ab4, #fd1d1d, #fcb045);
             }
           }
+        }
+      }
 
-          .likes-info {
+      .feed-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+
+        @media (min-width: $breakpoint-tablet) {
+          gap: 60px;
+          margin-bottom: 60px;
+        }
+
+        .card-post {
+          display: flex;
+          flex-direction: column;
+
+          @media (min-width: $breakpoint-tablet) {
+            border: 1px solid rgba(219, 219, 219, 1);
+            background-color: $background-primary;
+          }
+
+          .card-header {
             display: flex;
             align-items: center;
-            padding: 12px 0 5px;
+            padding: 11px 10px;
+            gap: 10px;
 
-            .people-like-img {
-              @include box-round(17px);
-              margin-right: 6.5px;
+            .author-img {
+              @include box-round(32px);
             }
 
-            .likes-quantity {
+            .author-infos {
+              .author-name {
+                font-weight: 600;
+                font-size: 1.3rem;
+                margin-bottom: 1.5px;
+              }
+
+              .author-location {
+                font-size: 1.1rem;
+              }
+            }
+
+            .more-icon {
+              cursor: pointer;
+              margin-left: auto;
+              height: 3px;
+            }
+          }
+
+          .post-img {
+            width: 100%;
+            height: 375px;
+            object-fit: cover;
+          }
+
+          .post-infos {
+            padding: 12px 15px;
+
+            .post-actions {
+              display: flex;
+              gap: 15px;
+
+              .action-icon {
+                height: 20px;
+                width: auto;
+                cursor: pointer;
+
+                &:last-child {
+                  margin-left: auto;
+                }
+              }
+            }
+
+            .likes-info {
+              display: flex;
+              align-items: center;
+              padding: 12px 0 5px;
+
+              .people-like-img {
+                @include box-round(17px);
+                margin-right: 6.5px;
+              }
+
+              .likes-quantity {
+                font-size: 1.3rem;
+              }
+            }
+
+            .post-caption {
               font-size: 1.3rem;
             }
           }
+        }
+      }
+    }
 
-          .post-caption {
-            font-size: 1.3rem;
+    .aside-container {
+      display: none;
+      @media (min-width: $breakpoint-tablet) {
+        @include simple-flex(flex-start, flex-start, column);
+        min-width: 300px;
+
+        .user-infos {
+          @include simple-flex(flex-start, center);
+          width: 100%;
+          margin-bottom: 20px;
+
+          img {
+            @include box-round(56px);
+            margin-right: 15px;
+          }
+
+          .user-name {
+            font-weight: 600;
+            font-size: 1.4rem;
+            margin-bottom: 1.5px;
+          }
+
+          .user-fullname {
+            color: #8e8e8e;
+            font-size: 1.4rem;
+          }
+
+          .logout-action {
+            @include action;
+            margin-left: auto;
           }
         }
-      }
-    }
-  }
 
-  .aside-container {
-    @include simple-flex(flex-start, flex-start, column);
-    min-width: 300px;
+        .suggestions-container {
+          @include simple-flex(flex-start, flex-start, column);
+          width: 100%;
 
-    .user-infos {
-      @include simple-flex(flex-start, center);
-      width: 100%;
-      margin-bottom: 20px;
+          .suggestion-title {
+            color: #8e8e8e;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
 
-      img {
-        @include box-round(56px);
-        margin-right: 15px;
-      }
+          .suggestion {
+            @include simple-flex(flex-start, center);
+            width: 100%;
+            margin-bottom: 10px;
 
-      .user-name {
-        font-weight: 600;
-        font-size: 1.4rem;
-        margin-bottom: 1.5px;
-      }
+            img {
+              @include box-round(32px);
+              margin-right: 15px;
+            }
 
-      .user-fullname {
-        color: #8e8e8e;
-        font-size: 1.4rem;
-      }
+            .follow-action {
+              @include action;
+              margin-left: auto;
+            }
 
-      .logout-action {
-        @include action;
-        margin-left: auto;
-      }
-    }
+            .suggestion-name {
+              font-size: 1.4rem;
+            }
 
-    .suggestions-container {
-      @include simple-flex(flex-start, flex-start, column);
-      width: 100%;
-
-      .suggestion-title {
-        color: #8e8e8e;
-        font-weight: 600;
-        margin-bottom: 10px;
-      }
-
-      .suggestion {
-        @include simple-flex(flex-start, center);
-        width: 100%;
-        margin-bottom: 10px;
-
-        img {
-          @include box-round(32px);
-          margin-right: 15px;
-        }
-
-        .follow-action {
-          @include action;
-          margin-left: auto;
-        }
-
-        .suggestion-name {
-          font-size: 1.4rem;
-        }
-
-        .suggestion-common-followers {
-          color: #8e8e8e;
-          font-size: 1.2rem;
+            .suggestion-common-followers {
+              color: #8e8e8e;
+              font-size: 1.2rem;
+            }
+          }
         }
       }
     }
