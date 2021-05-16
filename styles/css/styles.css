@@ -32,7 +32,7 @@ html {
 }
 @media (min-width: 768px) {
   .tab-bar {
-    background-color: #fafafa;
+    display: none;
   }
 }
 
