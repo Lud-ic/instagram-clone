@@ -32,60 +32,62 @@ html {
 }
 @media (min-width: 768px) {
   .tab-bar {
-    background-color: #fafafa;
+    display: none;
   }
 }
 
 .tab-bar-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  min-height: 54px;
-  background-color: #f2f2f2;
-}
-.tab-bar-top .logo {
-  width: 103px;
-  height: 29px;
-  display: flex;
-  align-content: center;
+  display: none;
 }
 
-.right-icons {
-  display: flex;
-  gap: 22px;
-  align-items: center;
+@media only screen and (min-width: 768px) {
+  .tab-bar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    min-height: 54px;
+    background-color: #811e1e;
+  }
+  .tab-bar-top .logo {
+    width: 103px;
+    height: 29px;
+    display: flex;
+    align-content: center;
+  }
+  .tab-bar-top .search-bar {
+    display: inline-flex;
+    margin-left: 8px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: rgba(118, 118, 128, 0.12);
+    width: 215px;
+    height: 28px;
+  }
+  .tab-bar-top .search-bar .search-bar-icon {
+    width: 10px;
+    height: 10px;
+    margin: 11.25px 9.07px 11.07px 11.25px;
+    opacity: 60%;
+  }
+  .tab-bar-top .search-bar .search-box {
+    border: none;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    color: #3c3c43;
+    opacity: 60%;
+    background: transparent;
+    font-size: 14px;
+  }
+  .tab-bar-top .right-icons {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+  }
+  .tab-bar-top .right-icons .icon {
+    width: 22px;
+    display: flex;
+  }
 }
-
-.icon {
-  width: 22px;
-  display: flex;
-}
-
-.search-bar {
-  display: inline-flex;
-  margin-left: 8px;
-  border-radius: 3px;
-  overflow: hidden;
-  background-color: rgba(118, 118, 128, 0.12);
-  width: 215px;
-  height: 28px;
-}
-.search-bar .search-bar-icon {
-  width: 10px;
-  height: 10px;
-  margin: 11.25px 9.07px 11.07px 11.25px;
-  opacity: 60%;
-}
-.search-bar .search-box {
-  border: none;
-  padding: 0.5rem 0.5rem 0.5rem 0;
-  color: #3c3c43;
-  opacity: 60%;
-  background: transparent;
-  font-size: 14px;
-}
-
 @media (min-width: 768px) {
   .profile-container {
     max-width: 975px;
