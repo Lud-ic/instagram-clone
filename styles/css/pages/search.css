@@ -286,15 +286,32 @@ html {
   flex-wrap: wrap;
   margin: 1px;
 }
+@media (min-width: 768px) {
+  .images {
+    width: 975px;
+    margin: auto;
+  }
+}
 .images .rows {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
 }
-.images img {
+@media (min-width: 768px) {
+  .images .rows {
+    margin-top: 40px;
+  }
+}
+.images .rows img {
   width: 124px;
   height: 119.53px;
+}
+@media (min-width: 768px) {
+  .images .rows img {
+    width: 292px;
+    height: 292px;
+  }
 }
 
 /*# sourceMappingURL=search.css.map */

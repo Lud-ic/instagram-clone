@@ -8,7 +8,6 @@
   @media (min-width: $breakpoint-tablet) {
     display: none;
   }
-  
 
   .search-bar {
     display: inline-flex;
@@ -23,9 +22,6 @@
     width: 327px;
     height: 36px;
 
-    
-    
-    
     .search-bar-icon {
       width: 13px;
       margin: 11.25px 9.07px 11.07px 11.25px;
@@ -34,28 +30,26 @@
       // background-color: rgba(118, 118, 128, 0.12);
       // opacity: 60%;
     }
-    
+
     .search-box {
       border: none;
       padding: 0.5rem 0.5rem 0.5rem 0;
       flex: 1;
-      color: rgba(60, 60, 67, 1);;
+      color: rgba(60, 60, 67, 1);
       // opacity: 60%;
       background: transparent;
-      font-size: 1.6rem ;
+      font-size: 1.6rem;
       // background-color: rgba(118, 118, 128, 0.12);
       // position: ;
-
     }
   }
-  
+
   .shape-search {
     width: 20px;
     height: 20px;
     margin: 10px;
     color: #979797;
     cursor: pointer;
-
   }
 }
 
@@ -66,8 +60,7 @@
   position: relative;
   box-sizing: border-box;
   overflow-x: auto;
-  
-  
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -75,15 +68,15 @@
   @media (min-width: $breakpoint-tablet) {
     display: none;
   }
-  
-  .tab-IGTV{
+
+  .tab-IGTV {
     @include simple-flex(center, center, row);
     font-size: 1.4rem;
     font-weight: 600;
     color: $text-color;
     // display: inline-flex;
     // position: relative;
-    
+
     border: 1px solid #ccc;
     border-radius: 6px;
     overflow: hidden;
@@ -102,7 +95,6 @@
       // padding: 0.5rem 0.5rem 0.5rem 0;
       // flex: 1;
       margin-left: 6px;
-      
     }
   }
   .tab-shop {
@@ -124,12 +116,10 @@
     .tab-iconShop {
       width: 12.5px;
       height: 14.5px;
-
     }
     .tab {
       border: none;
       margin-left: 6.5px;
-
     }
   }
   .tab-style {
@@ -208,9 +198,8 @@
 
     .tab {
       border: none;
-      
     }
-  } 
+  }
 }
 
 .images {
@@ -218,12 +207,26 @@
   flex-wrap: wrap;
   margin: 1px;
 
+  @media (min-width: $breakpoint-tablet) {
+    width: 975px;
+    // margin-top: 25px;
+    margin: auto;
+  }
   .rows {
     @include simple-flex(space-between);
-  }
-  img {
-    width: 124px;
-    height: 119.53px;
+
+    @media (min-width:$breakpoint-tablet) {
+      margin-top: 40px;
+    }
     
+
+    img {
+      width: 124px;
+      height: 119.53px;
+      @media (min-width: $breakpoint-tablet) {
+        width: 292px;
+        height: 292px;
+      }
+    }
   }
 }
